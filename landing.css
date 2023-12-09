@@ -43,8 +43,31 @@ header,
     color: #fff;
     padding: 20px;
     animation: slideIn 1s ease-in-out;
-    z-index: 1; /* Add this line */
+    z-index: 1; 
 }
+
+.authors {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .author {
+    width: 30%; 
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 5px;
+    transition: opacity 0.3s ease-in-out; 
+    color:#333;
+    background-color: orange;
+  }
+  
+
+  .author:hover {
+    background-color: black;
+    color: orange;
+    opacity: 0.8; 
+    transition: opacity 1.0s ease-in-out; 
+  }
 
 footer {
     bottom: 0;
@@ -55,7 +78,7 @@ footer {
     color: #fff;
     padding: 20px;
     animation: slideIn 1s ease-in-out;
-    z-index: 1; /* Add this line */
+    z-index: 1;
 }
 
 .navigation {
@@ -75,6 +98,18 @@ footer {
     padding: 20px;
     margin-bottom: 20px;
 }
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container .row .col-md-6 {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px); 
+}
+
+
 
 #products {
     background-color: #333;
@@ -86,8 +121,7 @@ footer {
 .product-images {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(1, 1fr); /* This will create 2 rows */
-    grid-gap: 20px; 
+    grid-template-rows: repeat(1, 1fr); 
 }
 
 .product-images img {
